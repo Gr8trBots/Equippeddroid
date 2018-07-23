@@ -1,0 +1,2 @@
+# Equippeddroid
+My bot
