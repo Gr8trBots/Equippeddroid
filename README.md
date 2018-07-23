@@ -1,2 +1,2 @@
 # Equippeddroid
-My bot
+Coming soon! [Stay tuned](https://bot.hernikplays.tk)
