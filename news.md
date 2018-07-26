@@ -7,7 +7,7 @@
 26/07/2018
 - The bot can be tested [in our server](https://discord.io/discordies) if it's online
 - When I have completed some useful commands, I will start publishing the code to GitHub!
-
+- EDIT: Our bot is avalible to the public [on Listcord](https://listcord.com/bot/470989648747954176) and we are waiting for DiscordBotList
 
 23/07/2018
 - Started development! Join [Discordies server](https://discord.io/hernikplays), that's where I will be testing it!
