@@ -4,6 +4,8 @@ const neko = new nekolife();
 
 module.exports.run = async (bot, message, args) => {
     
+    console.log(neko.getSFWNeko);
+
     let embed = new Discord.RichEmbed()
     .setAuthor(message.author.username)
     .setDescription("*meow*")
