@@ -22,10 +22,9 @@
 - talk [sentence] - Cleverbot talk - Issue: Recieving money from the bot intervenes the chat
 - 8ball [question] - Ask the 8ball question!
 
-### Money Commands
-- pay [@user] [amount] - Gives money to a user
-- balance - checks your balance\n
-(Money will be soon used for special commands - You earn money by chatting)
+### XP
+- xp - checks XP
+(Might implement something)
 
 ### Other useful commands
 - ping - Pings the bot
