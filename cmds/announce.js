@@ -17,7 +17,7 @@ module.exports.run = async (bot, message, args) => {
     .setTitle(`@everyone Announcement: ${title}`)
     .setTimestamp()
 
-    let annChannel = message.guild.channels.find(`name`, "mod-log");
+    let annChannel = message.guild.channels.find(`name`, "announcements");
         if(!annChannel) return message.channel.send("Cannot find 'mod-log' channel. Please create one, or report an error (e!error).");
 
    annChannel.send({embed: embed});
