@@ -2,7 +2,12 @@
 [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands)
 [![News Button](https://img.shields.io/badge/Page%3A-News-brightgreen.svg)](https://bot.hernikplays.tk/news) 
 # Bot News
-## Last updated 26th July
+## Last updated 27th July
+
+27/07/2018
+- Source code is now avalible
+- Bot fully operational!
+
 
 26/07/2018
 - The bot can be tested [in our server](https://discord.io/discordies) if it's online
