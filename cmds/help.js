@@ -23,7 +23,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("invite", "Gives you the invite link")
             .addField("status", "gives the link to the bot's status page")
             .addField("meme", "Sends you a meme")
-            .addField("talk <something>", "Cleverbot talk - Recieving money from the bot intervenes the chat")
+            .addField("talk <sentence>", "Cleverbot talk - Recieving money from the bot intervenes the chat")
             .setFooter(`The bot is still in development -- Prefix to all commands is e! -- <required> [optional]`)
 
             message.channel.send({embed: embed});
