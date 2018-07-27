@@ -4,6 +4,7 @@
 ## Commands list
 - Prefix is e!
 - [required] (optional)
+
 ### Moderation Commands
 - kick [@user or id] [reason] - Kicks a user - Requires a channel named mod-log - Requires KICK_MEMBERS permission
 - ban [@user or id] [reason] - Bans a user - Requires a channel named mod-log - Requires BAN_MEMBERS permission
@@ -11,6 +12,7 @@
 - unmute [@user or id] - Unmutes a user - Requires a channel named mod-log - Requires MANAGE_CHANNELS permission
 - purge [@user or number of messages] (number of messages if you specified a user) - This command will delete the number of messages or number of messages from a user. \nLimit is 99 (idk why) and you can delete only messages that are not older than 14 days - Requires MANAGE_MESSAGES permission
 - ann [title] [message]  - Announces a message to the #announcements channel
+
 ### Fun Commands
 - fortnite [Fortnite Username] [Platform (pc,xbl,psn)] - Tells you the Fortnite stats for the player from FortniteTracker
 - kiss (@user) - Kisses a user
@@ -25,7 +27,7 @@
 - balance - checks your balance\n
 (Money will be soon used for special commands - You earn money by chatting)
 
-### Other commands
+### Other useful commands
 - ping - Pings the bot
 - userinfo - Gives info about you
 - guildinfo - Gives info about current guild
@@ -33,3 +35,4 @@
 - error - gives link to the support server
 - invite - invite link for the bot
 - status - link to bot status page
+- **tr [from:iso] [to:iso] [sentence] - translates a sentence from one language to another**
