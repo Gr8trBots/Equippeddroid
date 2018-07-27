@@ -38,7 +38,7 @@ bot.on("message", async message => {
 
        
 
-       let xpAdd = Math.floor(Math.random() * 1) + 8;
+       let xpAdd = Math.floor(Math.random() * 10) + 8;
        
 
        console.log(xpAdd);
