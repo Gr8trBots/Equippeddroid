@@ -26,6 +26,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("talk <sentence>", "Cleverbot talk - Recieving money from the bot intervenes the chat")
             .addField("8ball <question>", "Ask the magic 8ball!")
             .addField("ann <title> <text>", "Announce something")
+            .addField("tr [from] [to] [sentence]", "Translates sentence")
             .setFooter(`The bot is still in development -- Prefix to all commands is e! -- <required> [optional]`)
 
             message.channel.send({embed: embed});
