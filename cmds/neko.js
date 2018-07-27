@@ -7,6 +7,8 @@ module.exports.run = async (bot, message, args) => {
     .setAuthor(message.author.username)
     .setDescription("Here is your neko (^・x・^)")
     .setImage(nekolife.getSFWTickle)
+
+    message.channel.send(embed);
 }
 
 module.exports.help = {
