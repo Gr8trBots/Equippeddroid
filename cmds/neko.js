@@ -1,5 +1,5 @@
 const Discord = module.require("discord.js");
-const nekolife = require("neko.life");
+const nekolife = require("nekos.life");
 
 module.exports.run = async (bot, message, args) => {
     
