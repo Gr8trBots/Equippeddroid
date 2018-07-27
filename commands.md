@@ -18,6 +18,7 @@
 - rps [rock/paper/scissors] - Does Rock Paper Scissors
 - meme - sends a meme
 - talk [sentence] - Cleverbot talk - Issue: Recieving money from the bot intervenes the chat
+- 8ball [question] - Ask the 8ball question!
 
 ### Money Commands
 - pay [@user] [amount] - Gives money to a user
