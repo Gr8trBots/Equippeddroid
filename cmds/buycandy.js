@@ -49,7 +49,7 @@ module.exports.run = async (bot, message, args) => {
             if(!coins[message.author.id]){
                 return message.reply("You don't have any 💵");
             }
-            let sCoins = coins[message.author.id].coins;
+           
     
             if(sCoins < 5) return message.reply("Not enough 💵! You need 5 💵 to buy candy");
         randomPuppy(sub2)
