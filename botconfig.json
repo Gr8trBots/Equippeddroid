@@ -1,4 +1,4 @@
 {
-    "token": "urtoken",
+    "token": process.env.BOT_TOKEN,
     "prefix": "e!"
 }
