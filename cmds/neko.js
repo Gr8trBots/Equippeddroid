@@ -7,7 +7,7 @@ module.exports.run = async (bot, message, args) => {
     let embed = new Discord.RichEmbed()
     .setAuthor(message.author.username)
     .setImage(neko.getSFWNeko)
-    .setDescription("Here is your neko (^・w・^)")
+    .addField("(^・w・^)", "Here is your Neko!")
     
 
     message.channel.send(embed);
