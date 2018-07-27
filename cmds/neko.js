@@ -4,12 +4,12 @@ const neko = new nekolife();
 
 module.exports.run = async (bot, message, args) => {
     
-    console.log(neko.getSFWNeko);
+    console.log(await neko.getSFWNeko);
 
     let embed = new Discord.RichEmbed()
     .setAuthor(message.author.username)
     .setDescription("*meow*")
-    .setImage(neko.getSFWNeko)
+    .setImage(await neko.getSFWNeko)
     .addField("(^・w・^)", "Here is your Neko!")
     
 
