@@ -1,12 +1,12 @@
 const Discord = module.require("discord.js");
 const fs = require("fs");
-let coins = require("../coins.json")
+let coins = require("../coins.json");
 
 module.exports.run = async (bot, message, args) => {
     
     if(!args[0])
     if(!coins[message.author.id]){
-        return message.reply("You don't have any 💵")
+        return message.reply("You don't have any 💵");
     }
 
     let pUsr = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);
