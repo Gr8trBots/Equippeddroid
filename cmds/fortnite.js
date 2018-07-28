@@ -1,6 +1,6 @@
 let Discord = module.require("discord.js");
 const fortnite = require("fortnite");
-const ft = new fortnite('fortnitetrackerkey');
+const ft = new fortnite(process.env.FRTNT); //fortnite tracker key
 module.exports.run = async (bot, message, args) => {
     let username = args[0];
     let platform = args[1] || 'pc';
