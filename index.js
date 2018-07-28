@@ -1,10 +1,10 @@
 const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
+const bot = new Discord.Client({disableEveryone: true});
 const fs = require("fs");
 let xp = require("./xp.json");
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, bot); //Connecting to DiscordBotList
-const bot = new Discord.Client({disableEveryone: true});
 const prefix = botconfig.prefix;
 bot.commands = new Discord.Collection();
 
