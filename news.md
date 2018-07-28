@@ -2,7 +2,10 @@
 [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands)
 [![News Button](https://img.shields.io/badge/Page%3A-News-brightgreen.svg)](https://bot.hernikplays.tk/news) 
 # Bot News
-## Last updated 27th July
+## Last updated 28th July
+
+28/07/2018
+- Bot approved on [DiscordBotList](https://discordbots.org/bot/470989648747954176)
 
 27/07/2018
 - Source code is now avalible
