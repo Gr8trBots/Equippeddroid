@@ -1,6 +1,6 @@
 const Discord = module.require("discord.js");
 const DBL = require("dblapi.js");
-const dbl = new DBL(process.env.DBL_TOKEN, client); //Connecting to DiscordBotList
+const dbl = new DBL(process.env.DBL_TOKEN, bot); //Connecting to DiscordBotList
 module.exports.run = async (bot, message, args) => {
     
     dbl.on('posted', () => {
