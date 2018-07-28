@@ -2,7 +2,8 @@ const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const fs = require("fs");
 let xp = require("./xp.json");
-
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.DBL_TOKEN, client); //Connecting to DiscordBotList
 const bot = new Discord.Client({disableEveryone: true});
 const prefix = botconfig.prefix;
 bot.commands = new Discord.Collection();
@@ -28,7 +29,13 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", async () => {
     console.log("Bot is online!");
-    
+    dbl.on('posted', () => {
+        console.log('Server count posted!');
+      })
+      
+      dbl.on('error', e => {
+       console.log(`Oops! ${e}`);
+      })
     bot.user.setActivity(`Moderating ${bot.guilds.size} servers // e!help`, {type: 'PLAYING'})
 });
 

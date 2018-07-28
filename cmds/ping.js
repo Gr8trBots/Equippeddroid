@@ -1,8 +1,15 @@
 const Discord = module.require("discord.js");
-
+const DBL = require("dblapi.js");
+const dbl = new DBL(process.env.DBL_TOKEN, client); //Connecting to DiscordBotList
 module.exports.run = async (bot, message, args) => {
     
-
+    dbl.on('posted', () => {
+        console.log('Server count posted!');
+      })
+      
+      dbl.on('error', e => {
+       console.log(`Oops! ${e}`);
+      })
     
     let m = await message.channel.send("Pinging...");
     
