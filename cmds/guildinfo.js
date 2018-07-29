@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("Icon URL", `${message.guild.iconURL}`)
             .addField("Member count", `${message.guild.memberCount}`)
             .addField("Guild was created by", `${message.guild.owner}`)
-            .addField("You have joined this guild on", `${message.guild.joinedAt}`)
+            .addField("Bot joined this guild on", `${message.guild.joinedAt}`)
             .setFooter(`Thanks for using EquippedDroid`, "https://bot.hernikplays.tk/yeetcon.png")
             
             
