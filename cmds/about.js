@@ -1,7 +1,7 @@
 const Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    
+    const dbl = new DBL(process.env.DBL_TOKEN, bot); 
    let m = new Discord.RichEmbed()
     .setTitle("About")
     .setDescription("Here is some info about this bot!")
