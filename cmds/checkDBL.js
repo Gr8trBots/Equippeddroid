@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
         let cert;
         if(bot.certifiedBot = true){
             let cert = "Yes";
-            console.log(`${bot.avatar} vs ${bot.defAvatar}`)
+            
         let emb = new Discord.RichEmbed()
         .setAuthor(bot.username)
         .setDescription(`Here is some Info about this bot on [DiscordBotList](https://discordbots.org/bot/${bot.id}`)
@@ -25,6 +25,7 @@ module.exports.run = async (bot, message, args) => {
         .addField("Upvotes", bot.points, true)
         .addField("Is the bot certified?", cert, true)
         .addField("Invite", `[Click to Invite ${bot.username}](${bot.invite})`, true)
+        message.channel.send(emb)
         }
         else if (bot.certifiedBot = false){
             let cert = "No";
@@ -43,10 +44,11 @@ module.exports.run = async (bot, message, args) => {
         .addField("Upvotes", bot.points, true)
         .addField("Is the bot certified?", cert, true)
         .addField("Invite", `[Click to Invite ${bot.username}](${bot.invite})`, true)
+        message.channel.send(emb)
         }
         
         
-        message.channel.send(emb)
+        
     })
   
 }
