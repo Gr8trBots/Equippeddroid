@@ -1,8 +1,8 @@
 const Discord = module.require("discord.js");
 const DBL = require("dblapi.js");
-const dbl = new DBL(process.env.DBL_TOKEN, bot);
+
 module.exports.run = async (bot, message, args) => {
-    
+    const dbl = new DBL(process.env.DBL_TOKEN, bot);   
     
     let toMute = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]); 
         if(!toMute) return  message.channel.send("Please mention a bot or write his ID!");
