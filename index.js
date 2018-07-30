@@ -37,19 +37,7 @@ bot.on("ready", async () => {
       dbl.on('error', e => {
        console.log(`Oops! ${e}`);
       })
-      bot.shard.fetchClientValues('guilds.size')
-.then(results => {
-  var totalServers = results.reduce((prev, val) => prev + val, 0);
-const snekfetch = require('snekfetch')
-const token = process.env.LC_TKN;  
-snekfetch.post(`https://listcord.com/api/bot/${bot.user.id}/guilds`)
-.set('Authorization', token)
-.send({
-      guilds: totalServers
-})
-.then(() => console.log('Updated listcord.com stats.'))
-})
-      console.log("Poseted Stats on Listcord");
+     
 
     bot.user.setActivity(`Moderating ${bot.guilds.size} servers // e!help`, {type: 'PLAYING'})
 });
