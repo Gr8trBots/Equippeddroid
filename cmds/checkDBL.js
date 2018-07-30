@@ -4,7 +4,7 @@ const DBL = require("dblapi.js");
 module.exports.run = async (bot, message, args) => {
     const dbl = new DBL(process.env.DBL_TOKEN, bot);   
     
-    let toMute = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]); 
+    let toMute = message.guild.member(message.mentions.users.first().id) || message.guild.member(args[0]).id; 
         if(!toMute) return  message.channel.send("Please mention a bot or write his ID!");
     dbl.getBot(args[0]).then(bot => {
         let cert;
