@@ -35,3 +35,5 @@
 - invite - invite link for the bot
 - status - link to bot status page
 - **tr [from:iso] [to:iso] [sentence] - translates a sentence from one language to another**
+- about - Writes info about the bot
+- **dbl [bot id] - searches and shows info about the bot on DiscordBotList**
