@@ -16,7 +16,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Moderating", `${bot.guilds.size} servers`, true)
     .addField("Uptime", `${bot.uptime}ms`, true)
     .addField("Voting Links", "[DiscordBotList](https://discordbots.org/bot/470989648747954176/vote)\n[Listcord](https://listcord.com/bot/470989648747954176)", true)
-    .addField("Upvotes", botdbl.points, true)
+    .addField("DBL Upvotes", botdbl.points, true)
     .setFooter("Thanks for using EquippedDroid!", "https://bot.hernikplays.tk/yeetcon.png")
     message.channel.send(m).then(msg => {msg.delete(100000)});
     })
