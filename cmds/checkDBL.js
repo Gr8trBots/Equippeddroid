@@ -6,7 +6,7 @@ module.exports.run = async (bot, message, args) => {
     
     
         if(!args[0]) return  message.channel.send("Please mention a bot or write his ID!");
-    dbl.getBot(bot2ch).then(bot => {
+    dbl.getBot(args[0]).then(bot => {
         let cert;
         if(bot.certifiedBot = true){
             let cert = "Yes";
