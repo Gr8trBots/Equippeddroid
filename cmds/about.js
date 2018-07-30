@@ -1,5 +1,5 @@
 const Discord = module.require("discord.js");
-
+const DBL = require("dblapi.js");
 module.exports.run = async (bot, message, args) => {
     const dbl = new DBL(process.env.DBL_TOKEN, bot); 
    let m = new Discord.RichEmbed()
