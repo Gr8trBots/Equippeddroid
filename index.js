@@ -37,7 +37,7 @@ bot.on("ready", async () => {
       dbl.on('error', e => {
        console.log(`Oops! ${e}`);
       })
-      client.shard.fetchClientValues('guilds.size')
+      bot.shard.fetchClientValues('guilds.size')
 .then(results => {
   var totalServers = results.reduce((prev, val) => prev + val, 0);
 const snekfetch = require('snekfetch')
