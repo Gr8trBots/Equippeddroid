@@ -3,7 +3,7 @@ const DBL = require("dblapi.js");
 module.exports.run = async (bot, message, args) => {
     const dbl = new DBL(process.env.DBL_TOKEN, bot); 
     dbl.getBot("470989648747954176").then(botdbl => {
-        let uptime = (bot.uptime / 1000) / 60;
+        let uptime = (bot.uptime / 1000 / 60);
    let m = new Discord.RichEmbed()
     .setTitle("About")
     .setDescription("Here is some info about this bot!")
