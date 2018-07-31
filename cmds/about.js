@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("Open Source", "[Yes](https://github.com/discordies/Equippeddroid)",true)
     .addField("OS License", "AGPL-v3.0", true)
     .addField("Moderating", `${bot.guilds.size} servers`, true)
-    .addField("Uptime", `${uptime.toFixed(3)}min`, true)
+    .addField("Uptime", `${uptime.toFixed(2)}min`, true)
     .addField("Voting Links", "[DiscordBotList](https://discordbots.org/bot/470989648747954176/vote)\n[Listcord](https://listcord.com/bot/470989648747954176)", true)
     .addField("DBL Upvotes", botdbl.points, true)
     .setFooter("Thanks for using EquippedDroid!", "https://bot.hernikplays.tk/yeetcon.png")
