@@ -6,7 +6,8 @@ let xp = require("./xp.json");
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, bot); //Connecting to DiscordBotList
 const prefix = botconfig.prefix;
-
+const botlistspace = require('botlist.space');
+const botlist = new botlistspace('470989648747954176', process.env.BOTSPACE_TKN);
 bot.commands = new Discord.Collection();
 
 
@@ -38,7 +39,16 @@ bot.on("ready", async () => {
        console.log(`Oops! ${e}`);
       })
      
-
+      bot.shard.fetchClientValues('guilds.size').then((guilds) => {
+        client.postServerCount(guilds.reduce((a, b) => a + b, 0)).then(() => {
+            console.log('Set the current bot\'s server count to ' + bot.guilds.size + ' guilds.');
+        }).catch((e) => {
+            console.error('Failed to post server count. ' + e.code);
+        });
+    }).catch((error) => {
+        console.error('Failed to get bot shard guild count', error);
+    });
+    
     bot.user.setActivity(`Moderating ${bot.guilds.size} servers // e!help`, {type: 'PLAYING'})
 });
 

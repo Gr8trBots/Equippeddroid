@@ -13,6 +13,7 @@
   "license": "AGPL-3.0",
   "dependencies": {
     "@types/snekfetch": "^4.0.1",
+    "botlist.space": "^1.0.7",
     "canvas-constructor": "^1.0.1",
     "cheerio": "^1.0.0-rc.2",
     "cleverbot.io": "^1.0.4",
