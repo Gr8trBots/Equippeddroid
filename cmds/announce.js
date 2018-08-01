@@ -1,7 +1,7 @@
 const Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    
+    const pingmoji = bot.emojis.find("name", "piingblob");
     if (!message.member.hasPermission("ADMINISTRATOR")) return message.channel.send("You need the ADMINISTRATOR permission to run this comamnd!")
     const color = args[0]
     let title = args[0];
@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     .setThumbnail(message.guild.iconURL)
     .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
     .setFooter(`An announcment made at ${message.createdTimestamp}`)
-    .setTitle(`Announcement: ${title}`)
+    .setTitle(`${pingmoji}Announcement: ${title}`)
     .setTimestamp()
 
     let annChannel = message.guild.channels.find(`name`, "announcements");
