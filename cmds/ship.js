@@ -12,12 +12,12 @@ module.exports.run = async (bot, message, args) => {
         Jimp.read(mUser.avatarURL, function (err, imagetouse) {
             if (err) throw err;
             imagetouse.quality(60)
-                      .resize(400, 400)
+                      .resize(866, 866)
                       .write("imagetouse.jpg");
             Jimp.read(mUser2.avatarURL, function (err, imagetouse2) {
             if (err) throw err;
             imagetouse2.quality(60)
-                      .resize(400, 400)
+                      .resize(866, 866)
                       .write("imagetouse2.jpg");
             Jimp.read(imagetobase, function (err, mydude) {
                 if (err) throw err;
