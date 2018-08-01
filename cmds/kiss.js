@@ -4,7 +4,7 @@ module.exports.run = async (bot, message, args) => {
     
     const blobkiss = bot.emojis.find("name", "blobkiss");
     const blobwat = bot.emojis.find("name", "blobwaitwhat");
-    const blurpleblob = bot.emojis.find("name", "BlurpleBlobHug");
+    const kissblob = bot.emojis.find("name", "ablobcouple");
 
     let kiss = [
         "https://media1.tenor.com/images/395b565d26a74bcf6b6fc8cea50df021/tenor.gif",
@@ -42,7 +42,7 @@ module.exports.run = async (bot, message, args) => {
       if (!message.mentions.members.first().user.username === message.isMentioned(message.author)) {
           const hembed = new Discord.RichEmbed()
               .setColor(`RANDOM`)
-              .setTitle(`${blurpleblob} ${message.author.username} gave ${message.mentions.members.first().user.username} a hug! How sweet!`)
+              .setTitle(`${kissblob} ${message.author.username} gave ${message.mentions.members.first().user.username} a kiss! How sweet!`)
               .setImage(kiss[hugresult])
           message.channel.send({
               embed: hembed
