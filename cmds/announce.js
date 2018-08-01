@@ -14,7 +14,7 @@ module.exports.run = async (bot, message, args) => {
     .setThumbnail(message.guild.iconURL)
     .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
     .setFooter(`An announcment made at ${message.createdTimestamp}`)
-    .setTitle(`${pingmoji}Announcement: ${title}`)
+    .setTitle(`${pingmoji} Announcement: ${title}`)
     .setTimestamp()
 
     let annChannel = message.guild.channels.find(`name`, "announcements");
