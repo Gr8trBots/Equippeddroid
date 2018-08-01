@@ -21,6 +21,7 @@
 - meme - sends a meme
 - talk [sentence] - Cleverbot talk - Issue: Recieving money from the bot intervenes the chat
 - 8ball [question] - Ask the 8ball question!
+- ship [one user] [another user] - ships two users!
 
 ### XP
 - xp - checks XP
