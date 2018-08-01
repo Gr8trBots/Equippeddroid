@@ -1,7 +1,7 @@
 let Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    const ayy = bot.emojis.find("name", "BlobBanhammer");
+    const banham = bot.emojis.find("name", "BlobBanhammer");
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("You need the 'BAN_MEMBERS' permission to do that!");
         let toBan = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]); 
         if(!toBan) return  message.channel.send("Please mention a user or write his ID!");
@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
         if(toBan.id === message.author.id) return message.channel.send("You cannot ban yourself!");
         if(toBan.highestRole.position >= message.member.highestRole.position) return message.channel.send("You cannot ban a member, who is higher or on the same level as you!");
         let banEmbed = new Discord.RichEmbed()
-        .setDescription(`:hammer: -Ban- :hammer:`)
+        .setDescription(`${banham} -Ban- ${banham}`)
         .setColor("#ff0000")
         .addField("Banned user", `${toBan} [${toBan.id}]`)
         .addField("Banned by", `${message.author.username}`)
