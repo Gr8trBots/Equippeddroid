@@ -28,6 +28,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("tr [from:iso] [to:iso] [sentence]", "Translates sentence")
             .addField("about", "Shows some info about the bot")
             .addField("dbl <Bot ID>", "Writes info about bot")
+            .addField("ship <one user> <second user>", "Ships two users!")
             .setFooter(`The bot is still in development -- Prefix to all commands is e! -- <required> [optional]`)
 
             message.channel.send({embed: embed});
