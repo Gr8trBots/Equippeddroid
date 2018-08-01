@@ -2,7 +2,10 @@
 [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands)
 [![News Button](https://img.shields.io/badge/Page%3A-News-brightgreen.svg)](https://bot.hernikplays.tk/news) 
 # Bot News
-## Last updated 30th July
+## Last updated 1st August
+
+01/08/2018
+- Adding bot to [botlist.space](https://botlist.space/view/470989648747954176), trying to get votes! What to add more?
 
 30/07/2018
 - Added some new commands (Check e!help or [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands))
