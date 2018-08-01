@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
         let mUser2 = message.mentions.users.last()
         if(!mUser) return message.channel.send(`Please specifify two users next time!`)
         const mUserA = mUser.avatarURL
-        var imagetobase = `https://www.botempire.tk/i/7cw6lzyw.png`;
+        var imagetobase = `https://www.botempire.tk/i/test.png`;
         Jimp.read(mUser.avatarURL, function (err, imagetouse) {
             if (err) throw err;
             imagetouse.quality(60)
