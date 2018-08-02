@@ -1,7 +1,7 @@
 const Discord = module.require("discord.js");
 const DBL = require("dblapi.js");
 module.exports.run = async (bot, message, args) => {
-    const dbl = bot.emojis.find("name", "discordbots");
+    const dblmoji = bot.emojis.find("name", "discordbots");
     const lc = bot.emojis.find("name", "listcord");
     const botspace = bot.emojis.find("name", "botlistspace");
     const comp = bot.emojis.find("name", "computer_bsod");
@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("📃 OS License", "AGPL-v3.0", true)
     .addField("🕵 Moderating", `${bot.guilds.size} servers`, true)
     .addField("⬆ Uptime", `${uptime.toFixed(2)}min`, true)
-    .addField("🔗 Voting Links", `${dbl} [DiscordBotList](https://discordbots.org/bot/470989648747954176/vote)\n${lc} [Listcord](https://listcord.com/bot/470989648747954176)\n${botspace} [botlist.space](https://botlist.space/view/470989648747954176)`, true)
+    .addField("🔗 Voting Links", `${dblmoji} [DiscordBotList](https://discordbots.org/bot/470989648747954176/vote)\n${lc} [Listcord](https://listcord.com/bot/470989648747954176)\n${botspace} [botlist.space](https://botlist.space/view/470989648747954176)`, true)
     .addField(`${up} DBL Upvotes`, botdbl.points, true)
     .setFooter("Thanks for using EquippedDroid!", "https://bot.hernikplays.tk/yeetcon.png")
     message.channel.send(m).then(msg => {msg.delete(100000)});
