@@ -42,7 +42,7 @@ bot.on("ready", async () => {
      
       
 
-    bot.user.setActivity(`Moderating ${bot.guilds.size} servers // e!help`, {type: 'PLAYING'})
+    bot.user.setActivity(`Moderating ${bot.guilds.size} servers // e!help`, {type: 'PLAYING'});
 });
 
 bot.on("message", async message => {
