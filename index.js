@@ -8,15 +8,10 @@ const dbl = new DBL(process.env.DBL_TOKEN, bot); //Connecting to DiscordBotList
 const prefix = botconfig.prefix;
 const botlistspace = require('botlist.space');
 const botlist = new botlistspace('470989648747954176', process.env.BOTSPACE_TKN); //botlist.space
-var utils = require('bot-utils')
+
 bot.commands = new Discord.Collection();
 
-var presences = [
-    `Moderating ${bot.guilds.size} servers // e!help`,
-    `Helping ${bot.guilds.memberCount}`,
-    "Rock, Paper, Scissors",
-    "with code"
-]
+
 
 fs.readdir("./cmds/", (err, files) => {
     if(err) console.error(err);
@@ -36,7 +31,6 @@ fs.readdir("./cmds/", (err, files) => {
 });
 
 bot.on("ready", async () => {
-    console.log(bot.guilds.memberCount);
     console.log("Bot is online!");
     dbl.on('posted', () => {
         console.log('Server count posted!');
@@ -47,12 +41,8 @@ bot.on("ready", async () => {
       })
      
       
-      bot.user.setActivity(utils.randItemFromArray(presences)).then(() => {
-        setTimeout(() => {
-            bot.user.setActivity(utils.randItemFromArray(presences))
-        }, 600000)
-    })
-    
+
+    bot.user.setActivity(`Moderating ${bot.guilds.size} servers // e!help`, {type: 'PLAYING'})
 });
 
 bot.on("message", async message => {
