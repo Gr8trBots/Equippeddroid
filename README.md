@@ -6,7 +6,9 @@
 ### A Discord bot created by hernikplays#4673 from [Discordies](https://discordiesreview.wordpress.com)
 This bot is created with [Discord.js](https://discord.js.org) and is planned to be a nice multi-purpose bot!
 
-The bot is currently under heavy development, but some times we open test it! Check our [Discord Server](https://discord.io/discordies) if the bot is online!
+The bot is currently completed, and new commands will be added constantly!
+Get the bot here:
+[![Bot Widget](https://discordbots.org/api/widget/470989648747954176.svg?topcolor=7FFFC5)](https://discordbots.org/bot/470989648747954176)
 
 ### Support or Contact
 
