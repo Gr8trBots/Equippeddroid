@@ -10,7 +10,7 @@ module.exports.run = async (bot, message, args) => {
     let str = args[0];
     let repl = str.replace("-", " ");
   // Create a new role with data
-guild.createRole({
+message.guild.createRole({
     name: `${repl}`,
     color: `${args[1]}`,
   }).then(role => console.log(`Created new role with name ${role.name} and color ${role.color}`))
