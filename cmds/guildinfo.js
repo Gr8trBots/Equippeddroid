@@ -11,13 +11,12 @@ module.exports.run = async (bot, message, args) => {
             .addField("Guild Name", `${message.guild.name}`, true)
             .addField("ID", `${message.guild.id}`, true)
             .addField("Guild created at", `${message.guild.createdAt}`, true)
+            .addField("Guild Server Region", `${message.guild.region}`, true)
+            .addField("Explicit Content Filter Level", `${message.guild.explicitContentFilter}`, true)
             .addField("Icon URL", `${message.guild.iconURL}`, true)
             .addField("Member count", `${message.guild.memberCount}`, true)
             .addField("Guild was created by", `${message.guild.owner}`, true)
             .addField("Bot joined this guild on", `${message.guild.joinedAt}`, true)
-            .addField("Banned users in this guild", message.guild.fetchBans()
-            .then(bans => console.log(`This guild has ${bans.size} bans`))
-            .catch(console.error), true )
             .setFooter(`Thanks for using EquippedDroid`, "https://bot.hernikplays.tk/yeetcon.png")
             
             
