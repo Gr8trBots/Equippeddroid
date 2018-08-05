@@ -4,6 +4,10 @@
 # Bot News
 ## Last updated 1st August
 
+05/08/2018
+- Getting on [discordbot.world](https://discordbot.world/bot/470989648747954176)
+- Taking a break from developing for a while :/
+
 01/08/2018
 - Adding bot to [botlist.space](https://botlist.space/view/470989648747954176), trying to get votes! What to add more?
 
