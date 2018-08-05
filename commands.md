@@ -22,6 +22,9 @@
 - talk [sentence] - Cleverbot talk - Issue: Recieving money from the bot intervenes the chat
 - 8ball [question] - Ask the 8ball question!
 - ship [one user] [another user] - ships two users!
+- neko - sendsa neko
+- hentai - sends a hentai Gif
+- dog - sends a dog picture!
 
 ### XP
 - xp - checks XP
