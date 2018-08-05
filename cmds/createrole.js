@@ -8,7 +8,7 @@ module.exports.run = async (bot, message, args) => {
     if(!args[1]) return message.channel.send("Please write a hex code for the color of the role!");
     if(!args[1].startsWith("#")) return message.channel.send("Please send a hex code (like: **#fff**)")
     let str = args[0];
-    let repl = str.replace("-", " ");
+    let repl = str.replace("-", "\u0020");
   // Create a new role with data
 message.guild.createRole({
     name: `${repl}`,
