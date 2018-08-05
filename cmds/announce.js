@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#458B00")
     .setThumbnail(message.guild.iconURL)
     .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
-    .setFooter(`An announcement made at ${message.createdTimestamp}`)
+    .setFooter(`An announcement made at ${message.createdAt}`)
     .setTitle(`${pingmoji} Announcement: ${title}`)
     .setTimestamp()
 
