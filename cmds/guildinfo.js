@@ -1,9 +1,7 @@
 let Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    let ban = guild.fetchBans()
-  .then(bans => console.log(`This guild has ${bans.size} bans`))
-  .catch(console.error);
+   
     if(!message.guild.available) return message.channel.send("EquippedBot has encountered an error. Please report this in our support server: https://discord.gg/zfTG2Xv")    
     let embed = new Discord.RichEmbed()
             .setAuthor(`${message.author.username}`)
@@ -17,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("Member count", `${message.guild.memberCount}`, true)
             .addField("Guild was created by", `${message.guild.owner}`, true)
             .addField("Bot joined this guild on", `${message.guild.joinedAt}`, true)
-            .addField("Banned users in this guild", guild.fetchBans()
+            .addField("Banned users in this guild", message.guild.fetchBans()
             .then(bans => console.log(`This guild has ${bans.size} bans`))
             .catch(console.error), true )
             .setFooter(`Thanks for using EquippedDroid`, "https://bot.hernikplays.tk/yeetcon.png")
