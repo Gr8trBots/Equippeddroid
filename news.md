@@ -5,7 +5,7 @@
 ## Last updated 1st August
 
 05/08/2018
-- Getting on [discordbot.world](https://discordbot.world/bot/470989648747954176)
+- Getting on [discordbot.world](https://discordbot.world/bot/470989648747954176) and also [botsfordiscord.com](https://botsfordiscord.com/bot/470989648747954176)
 - Taking a break from developing for a while :/
 
 01/08/2018
