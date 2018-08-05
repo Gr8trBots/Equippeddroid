@@ -13,7 +13,7 @@ module.exports.run = async (bot, message, args) => {
 message.guild.createRole({
     name: `${repl}`,
     color: `${args[1]}`,
-  }).then(role => console.log(`Created new role with name ${role.name} and color ${role.color}`))
+  }).then(role => message.channel.send(`Created new role with name ${role.name} and color ${role.color}`)).then(msg => {msg.delete(5000)})
   .catch(console.error)
 }
 
