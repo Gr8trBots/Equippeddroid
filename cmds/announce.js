@@ -19,25 +19,7 @@ module.exports.run = async (bot, message, args) => {
 
     let annChannel = message.guild.channels.find(`name`, "announcements");
         if(!annChannel){ 
-            message.channel.send("Cannot find 'announcements' channel. Should I create one? Send 'Yes, please!' in 5 seconds to confirm, else wait!").then(() => {
-                message.channel.awaitMessages(response => response.content === 'Yes, please!', {
-                  max: 1,
-                  time: 5000,
-                  errors: ['time'],
-                })
-                .then((collected) => {
-                    message.channel.send(`You have sent: ${collected.first().content} and I am creating a channel now!`);
-                    guild.createChannel('announcements', 'text', [{
-                        deny: ['SEND_MESSAGES'],
-                        allow: ['READ_MESSAGES']
-                    }])
-  .then(message.channel.send("Succesfully created #announcements and you can now adjust it to your needs!"))
-  .catch(console.error);
-                  })
-                  .catch(() => {
-                    message.channel.send('You have not sent "Yes, please!" in time! Create the channel manualy or try again!');
-                  });
-                });
+            message.channel.send("Cannot find 'announcements' channel. Please create one with e!createchannel, or report an error (e!error).");
                 }
    annChannel.send({embed: embed});
   
