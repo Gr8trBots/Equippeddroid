@@ -13,12 +13,12 @@ module.exports.run = async (bot, message, args) => {
     .setColor("#458B00")
     .setThumbnail(message.guild.iconURL)
     .setDescription("**Announced by: " + message.author + "**\n\n" + text + "\n")
-    .setFooter(`An announcment made at ${message.createdTimestamp}`)
+    .setFooter(`An announcement made at ${message.createdTimestamp}`)
     .setTitle(`${pingmoji} Announcement: ${title}`)
     .setTimestamp()
 
     let annChannel = message.guild.channels.find(`name`, "announcements");
-        if(!annChannel) return message.channel.send("Cannot find 'mod-log' channel. Please create one, or report an error (e!error).");
+        if(!annChannel) return message.channel.send("Cannot find 'announcements' channel. Please create one, or report an error (e!error).");
 
    annChannel.send({embed: embed});
   
