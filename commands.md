@@ -12,6 +12,8 @@
 - unmute [@user or id] - Unmutes a user - Requires a channel named mod-log - Requires MANAGE_CHANNELS permission
 - purge [@user or number of messages] (number of messages if you specified a user) - This command will delete the number of messages or number of messages from a user. \nLimit is 99 (idk why) and you can delete only messages that are not older than 14 days - Requires MANAGE_MESSAGES permission
 - ann [title] [message]  - Announces a message to the #announcements channel
+- createchannel [channelnamenospaces] - Creates an empty channel
+- createrole [role-name-with-dashes-instead-of-spaces] [#hexcolor] - creates a role with the name and ccolor
 
 ### Fun Commands
 - fortnite [Fortnite Username] [Platform (pc,xbl,psn)] - Tells you the Fortnite stats for the player from FortniteTracker
