@@ -2,7 +2,7 @@ const Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     
-    if (message.author.id !== '145973959127597057' && message.author.id !== '145973959127597057') return;
+    if (message.author.id !== '145973959127597057' && message.author.id !== '145973959127597057') return message.channel.send("You crazy?");
     try {
         let codein = args.join(" ");
         let code = eval(codein);
