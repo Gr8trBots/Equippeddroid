@@ -35,6 +35,7 @@ module.exports.run = async (bot, message, args) => {
             .setDescription("Here is a list of all avalible commands (2/2):")
             .setColor("#70DBDB")
             .addField("createchannel <channelnamenospaces>", "Create a channel with the name you want - Requires `MANAGE_CHANNELS` permission")
+            .addField("createrole <Role Name (Use - instead of spaces)> <Hex Code>", "Create a role with the hex code color - Requires `MANAGE_ROLES` permission")
             .addField("dog", "sends a picture of a dog")
             .addField("hentai", "Same as NSFW but with Hentai")
             .addField("neko", "Sends you a neko!")

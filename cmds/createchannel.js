@@ -9,7 +9,7 @@ module.exports.run = async (bot, message, args) => {
     message.guild.createChannel(`${args[0]}`, 'text')
   .then(console.log)
   .catch(console.error);
-  message.channel.send("I have created the channel :)");
+  message.channel.send(`I have created the channel ${args[0]} 👌\nPlease change it to your like`);
 }
 
 module.exports.help = {
