@@ -1,4 +1,4 @@
 {
-    "token": "yourtokenthatwillreplaceprocess.env.BOT_TOKEN",
+    "token": "token",
     "prefix": "e!"
 }
