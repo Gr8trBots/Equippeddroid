@@ -2,11 +2,12 @@
 [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands)
 [![News Button](https://img.shields.io/badge/Page%3A-News-brightgreen.svg)](https://bot.hernikplays.tk/news) 
 # Bot News
-## Last updated 1st August
+## Last updated 5st August
 
 05/08/2018
 - Getting on [discordbot.world](https://discordbot.world/bot/470989648747954176) and also [botsfordiscord.com](https://botsfordiscord.com/bot/470989648747954176)
 - Taking a break from developing for a while :/
+- When getting back to developing, I may also update the documentation over at [Gitbooks](https://discordies.gitbook.io/equippeddroid/)
 
 01/08/2018
 - Adding bot to [botlist.space](https://botlist.space/view/470989648747954176), trying to get votes! What to add more?
