@@ -3,7 +3,7 @@ let Discord = module.require("discord.js");
 module.exports.run = async (bot, message, args) => {
     let embed = new Discord.RichEmbed()
             .setAuthor(message.author.username)
-            .setDescription("Here is a list of all avalible commands:")
+            .setDescription("Here is a list of all avalible commands (1/2):")
             .setColor("#70DBDB")
             .addField("userinfo", `Writes info about you (Trying to rewrite to display info about anyone)`)
             .addField("guildinfo", "Displays some information about the current guild")
@@ -30,7 +30,13 @@ module.exports.run = async (bot, message, args) => {
             .addField("dbl <Bot ID>", "Writes info about bot")
             .addField("ship <one user> <second user>", "Ships two users!")
             .setFooter(`This bot is complete, but new commands may be added on request -- Prefix to all commands is e! -- <required> [optional]`)
-
+            let embed = new Discord.RichEmbed()
+            .setAuthor(message.author.username)
+            .setDescription("Here is a list of all avalible commands (2/2):")
+            .setColor("#70DBDB")
+            .addField("dog", "sends a picture of a dog")
+            .addField("hentai", "Same as NSFW but with Hentai")
+            .addField("neko", "Sends you a neko!")
             message.channel.send({embed: embed});
 }
 
