@@ -27,8 +27,11 @@ module.exports.run = async (bot, message, args) => {
                 })
                 .then((collected) => {
                     message.channel.send(`You have sent: ${collected.first().content} and I am creating a channel now!`);
-                    guild.createChannel('announcements', 'text')
-  .then(message.channel.send("Succesfully created #announcements"))
+                    guild.createChannel('announcements', 'text', [{
+                        deny: ['SEND_MESSAGES']
+                        allow: ['READ_MESSAGES']
+                    }])
+  .then(message.channel.send("Succesfully created #announcements and you can now adjust it to your needs!"))
   .catch(console.error);
                   })
                   .catch(() => {
