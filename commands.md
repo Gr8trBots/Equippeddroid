@@ -27,6 +27,7 @@
 - neko - sendsa neko
 - hentai - sends a hentai Gif
 - dog - sends a dog picture!
+- dice - Throws the dice
 
 ### XP
 - xp - checks XP
