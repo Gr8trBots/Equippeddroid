@@ -4,7 +4,7 @@ const rand = randomnum(1, 6);
 module.exports.run = async (bot, message, args) => {
     
   await message.channel.send("Rolling the dice...")
-   .then(message => message.edit(`:dice: The dice rolled ${rand}`));
+   .then(message => message.edit(`:dice: The dice rolled ${rand()}`));
 
   
   
