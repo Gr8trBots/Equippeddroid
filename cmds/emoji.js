@@ -1,6 +1,5 @@
 const Discord = module.require("discord.js");
-const sharp = require("sharp");
-const path = require("path");
+
 const makemoji = require("make-emoji");
 module.exports.run = async (bot, message, args) => {
     
