@@ -5,7 +5,7 @@ module.exports.run = async (bot, message, args) => {
     
    message.channel.send("Rolling the dice...");
 
-   Discord().TextChannel.fetchMessage(message.id)
+   Discord.TextChannel.fetchMessage(message.id)
     .then(message => message.edit(`:dice: The dice rolled ${rand}`));
   
 }
