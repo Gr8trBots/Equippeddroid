@@ -34,7 +34,6 @@
     "querystring": "^0.2.0",
     "random-puppy": "^1.1.0",
     "random.dog": "^1.0.7",
-    "sharp": "^0.20.5",
     "superagent": "^3.8.3",
     "unique-random": "^2.0.0"
   }
