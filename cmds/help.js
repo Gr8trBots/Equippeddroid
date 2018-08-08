@@ -39,6 +39,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("dog", "sends a picture of a dog")
             .addField("hentai", "Same as NSFW but with Hentai")
             .addField("neko", "Sends you a neko!")
+            .addField("dice", "Rolls a 6 dice")
             await message.channel.send({embed: embed});
             await message.channel.send(bew);
 }
