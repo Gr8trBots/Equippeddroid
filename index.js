@@ -6,8 +6,7 @@ let xp = require("./xp.json");
 const DBL = require("dblapi.js");
 const dbl = new DBL(process.env.DBL_TOKEN, bot); //Connecting to DiscordBotList
 const prefix = botconfig.prefix;
-const botlistspace = require('botlist.space');
-const botlist = new botlistspace('470989648747954176', process.env.BOTSPACE_TKN); //botlist.space
+const emb = require("discord.js-embed");
 
 bot.commands = new Discord.Collection();
 
