@@ -6,6 +6,7 @@
 
 09/08/2018
 - Back
+- Released ![GitHub release](https://img.shields.io/github/release/discordies/Equippeddroid.svg)
 
 
 05/08/2018
