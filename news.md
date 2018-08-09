@@ -2,7 +2,11 @@
 [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands)
 [![News Button](https://img.shields.io/badge/Page%3A-News-brightgreen.svg)](https://bot.hernikplays.tk/news) 
 # Bot News
-## Last updated 5st August
+## Last updated 9th August
+
+09/08/2018
+- Back
+
 
 05/08/2018
 - Getting on [discordbot.world](https://discordbot.world/bot/470989648747954176) and also [botsfordiscord.com](https://botsfordiscord.com/bot/470989648747954176)
