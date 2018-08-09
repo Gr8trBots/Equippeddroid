@@ -1,5 +1,6 @@
 # Equippeddroid
 A multi-purpose bot for Discord!
+![GitHub release](https://img.shields.io/github/release/discordies/Equippeddroid.svg)
 [Website](https://bot.hernikplays,tk)
 -
 
