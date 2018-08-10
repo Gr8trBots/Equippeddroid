@@ -11,15 +11,12 @@ module.exports.run = async (bot, message, args) => {
   let gRole = message.guild.roles.find(`name`, role);
   if(!gRole) return message.reply("Couldn't find that role.");
 
-  if(rMember.roles.has(gRole.id)) return message.reply("❌ They already have that role.");
+  if(rMember.roles.has(gRole.id)) return message.reply("They already have that role.");
   await(rMember.addRole(gRole.id));
 
-  try{
-    await rMember.send(`Congrats, you have been given the role ${gRole.name}`)
-  }catch(e){
-    console.log(e.stack);
-    message.channel.send(`Congrats to <@${rMember.id}>, they have been given the role ${gRole.name}. We tried to DM them, but their DMs are locked.`)
-  }
+  
+    message.channel.send(`<@${rMember.id}> has been given the role ${gRole.name}.`).then(msg => {msg.delete(5000)});
+  
   
 }
 
