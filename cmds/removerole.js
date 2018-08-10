@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
   await(rMember.removeRole(gRole.id));
 
  
-    message.channel.send(`<@${rMember.id}> has lost the ${gRole.name} role.`).then(msg => {msg.delete(5000)});
+    message.channel.send(`<@${rMember.id}> has lost the ${gRole.name} role.`).then(msg => {msg.delete(10000)});
   
 
   

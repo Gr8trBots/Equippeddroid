@@ -15,7 +15,7 @@ module.exports.run = async (bot, message, args) => {
   await(rMember.addRole(gRole.id));
 
   
-    message.channel.send(`<@${rMember.id}> has been given the role ${gRole.name}.`).then(msg => {msg.delete(5000)});
+    message.channel.send(`<@${rMember.id}> has been given the role ${gRole.name}.`).then(msg => {msg.delete(10000)});
   
   
 }
