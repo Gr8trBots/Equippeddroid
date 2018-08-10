@@ -40,6 +40,8 @@ module.exports.run = async (bot, message, args) => {
             .addField("hentai", "Same as NSFW but with Hentai")
             .addField("neko", "Sends you a neko!")
             .addField("dice", "Rolls a 6 dice")
+            .addField("addrole <@user> <role name>", "Add role to a user")
+            .addField("remrole <@user> <role name>", "Remove a role from a user!")
             await message.channel.send({embed: embed});
             await message.channel.send(bew);
 }
