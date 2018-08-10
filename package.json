@@ -14,9 +14,7 @@
   "dependencies": {
     "@types/snekfetch": "^4.0.1",
     "bot-utils": "^1.2.0",
-    "botlist.space": "^1.0.7",
     "canvas-constructor": "^1.0.1",
-    "cheerio": "^1.0.0-rc.2",
     "cleverbot.io": "^1.0.4",
     "dblapi.js": "^2.2.0",
     "discord.js": "^11.3.2",
@@ -25,7 +23,6 @@
     "fortnite": "^4.1.1",
     "google-translate-api": "^2.3.0",
     "jimp": "^0.2.28",
-    "listcord": "^1.0.1",
     "memejs": "^1.0.7",
     "nekos.life": "^1.0.6",
     "node-fetch": "^2.2.0",
