@@ -2,6 +2,7 @@ let Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     const banham = bot.emojis.find("name", "BlobBanhammer");
+    if (!message.guild.me.hasPermission(['BAN_MEMBERS'])) return message.reply('Missing the required `Ban Members` permission.');
     if(!message.member.hasPermission("BAN_MEMBERS")) return message.channel.send("You need the 'BAN_MEMBERS' permission to do that!");
         let toBan = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]); 
         if(!toBan) return  message.channel.send("Please mention a user or write his ID!");

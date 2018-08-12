@@ -1,7 +1,7 @@
 let Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-   
+    if (!message.guild.me.hasPermission(['MANAGE_ROLES'])) return message.reply('Missing the required `Manage Roles` permission.');
         if(!message.member.hasPermission("MANAGE_CHANNELS")) return message.channel.send("You need the 'MANAGE_CHANNELS' permission to do that!");
         let toMute = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]); 
         if(!toMute) return  message.channel.send("Please mention a user or write his ID!");

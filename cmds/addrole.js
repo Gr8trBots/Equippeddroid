@@ -1,7 +1,7 @@
 const Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
-    
+    if (!message.guild.me.hasPermission(['MANAGE_MEMBERS'])) return message.reply('Missing the required `Manage MEMBERS` permission.');
   if(!message.member.hasPermission("MANAGE_MEMBERS")) return message.reply("You need the 'MANAGE_MEMBERS' permission to do that!");
  
   let rMember = message.guild.member(message.mentions.users.first()) || message.guild.members.get(args[0]);

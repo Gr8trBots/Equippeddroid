@@ -3,6 +3,7 @@ const Discord = module.require("discord.js");
 module.exports.run = async (bot, message, args) => {
     const de = bot.emojis.find("name", "blobdevil");
     const up = bot.emojis.find("name", "blobowo");
+    if (!message.guild.me.hasPermission(['MANAGE_ROLES'])) return message.reply('Missing the required `Manage Roles` permission.');
     if (!message.member.hasPermission("MANAGE_ROLES")) return message.channel.send("You need the `MANAGE_ROLES` permission to run this comamnd!");
     if(!args[0]) return message.channel.send(`${up} Please write the Role Name`);
     if(!args[1]) return message.channel.send("Please write a hex code for the color of the role!");

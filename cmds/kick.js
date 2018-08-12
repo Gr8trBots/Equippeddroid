@@ -2,6 +2,7 @@ let Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
     const blobkick = bot.emojis.find("name", "blobsalute");
+    if (!message.guild.me.hasPermission(['KICK_MEMBERS'])) return message.reply('Missing the required `Kick Members` permission.');
     if(!message.member.hasPermission("KICK_MEMBERS")) return message.channel.send("You need the 'KICK_MEMBERS' permission to do that!");
         let toKick = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]); 
         if(!toKick) return  message.channel.send("Please mention a user or write his ID!");
