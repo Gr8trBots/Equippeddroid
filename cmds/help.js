@@ -16,7 +16,6 @@ module.exports.run = async (bot, message, args) => {
             .addField("fortnite <Fortnite Username> [Platform (pc, psn, xbl - default is pc)]", "Tells you the Fortnite stats for the player from FortniteTracker")
             .addField("error", "Gives you a link to the support server")
             .addField("kiss [@User]", "Kisses a user")
-            .addField("xp", "checks your xp")
             .addField("nsfw", "Sends a NSFW picture (18+) - Can only be used in NSFW channels")
             .addField("rps <rock/paper/scissors>", "Does Rock Paper Scissors")
             .addField("invite", "Gives you the invite link")
