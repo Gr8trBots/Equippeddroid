@@ -21,7 +21,7 @@ module.exports.run = async (bot, message, args) => {
     .addField("❗ Prefix", "e!", true)
     .addField(`${gh} Open Source`, "[Yes](https://github.com/discordies/Equippeddroid)",true)
     .addField("📃 OS License", "AGPL-v3.0", true)
-    .addField("🔎 Version", "1.12", true)
+    .addField("🔎 Version", "1.13", true)
     .addField("🕵 Moderating", `${bot.guilds.size} servers`, true)
     .addField("⬆ Uptime", `${uptime.toFixed(2)}min`, true)
     .addField("🔗 Voting Links", `${dblmoji} [DiscordBotList](https://discordbots.org/bot/470989648747954176/vote)\n${lc} [Listcord](https://listcord.com/bot/470989648747954176)\n${botspace} [botlist.space](https://botlist.space/view/470989648747954176)\n${discordbotworld} [discordbot.world](https://discordbot.world/bot/470989648747954176)`, true)
