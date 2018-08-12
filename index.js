@@ -32,14 +32,10 @@ fs.readdir("./cmds/", (err, files) => {
 
 bot.on("ready", async () => {
     console.log("Bot is online!");
-    bot.shard.fetchClientValues('guilds.size').then((guilds) => {
-        botspace.postServerCount(guilds.reduce((a, b) => a + b, 0)).then(() => {
-            console.log('Set the current bot\'s server count to ' + bot.guilds.size + ' guilds.');
-        }).catch((e) => {
-            console.error('Failed to post server count. ' + e.code);
-        });
-    }).catch((error) => {
-        console.error('Failed to get bot shard guild count', error);
+    botspace.postServerCount(bot.guilds.size).then(() => { 
+        console.log('Set the current bot\'s server count to ' + bot.guilds.size + ' guilds.');
+    }).catch((e) => {
+        console.error('Failed to post server count. ' + e.code);
     });
 
     dbl.on('posted', () => {
