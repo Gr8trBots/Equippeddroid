@@ -28,6 +28,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("about", "Shows some info about the bot")
             .addField("dbl <Bot ID>", "Writes info about bot")
             .addField("ship <one user> <second user>", "Ships two users!")
+            .addField("vkick <@user>", "Kicks a user from a voice channel")
             .setFooter(`This bot is complete, but new commands may be added on request -- Prefix to all commands is e! -- <required> [optional]`)
             let bew = new Discord.RichEmbed()
             .setAuthor(message.author.username)
