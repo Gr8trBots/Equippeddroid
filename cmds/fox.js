@@ -8,10 +8,10 @@ module.exports.run = async (bot, message, args) => {
         let removed = plswork.slice(10);
       let rembefore = removed.slice(0, -40);
       let fixhttp = rembefore.replace("/\\/", "");
-      console.log(removed + " " + rembefore);
+      console.log(rembefore + " " + fixhttp);
       let em = new Discord.RichEmbed()
       .setDescription("Here is your fox")
-      .setImage(rembefore)
+      .setImage(fixhttp)
       .setFooter("Powered by randomfox.ca")
       message.channel.send(em);
       });
