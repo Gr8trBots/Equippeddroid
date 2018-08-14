@@ -7,6 +7,7 @@ module.exports.run = async (bot, message, args) => {
         console.log(plswork);
         let removed = plswork.slice(10);
       let rembefore = removed.slice(0, -40);
+      let fixhttp = rembefore.replace("/\\/", "");
       console.log(removed + " " + rembefore);
       let em = new Discord.RichEmbed()
       .setDescription("Here is your fox")
