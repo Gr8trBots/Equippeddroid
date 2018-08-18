@@ -16,6 +16,7 @@ module.exports.run = async (bot, message, args) => {
     }
     
     else if(!toBan) return  message.channel.send("Please mention a user or write his ID!");
+    if (toBan){
         let embed = new Discord.RichEmbed()
             .setAuthor(`${message.author.username}`, `${message.author.displayAvatarURL}`)
             .setDescription("This is some of the info I could find:")
