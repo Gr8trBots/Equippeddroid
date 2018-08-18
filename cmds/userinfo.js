@@ -1,6 +1,7 @@
 let Discord = module.require("discord.js");
 
 module.exports.run = async (bot, message, args) => {
+    let ui = message.guild.member(message.mentions.users.first()) || message.guild.member(args[0]); 
     if(!args[0]){
         let embed = new Discord.RichEmbed()
             .setAuthor(`${message.author.username}`, `${message.author.displayAvatarURL}`)
@@ -13,7 +14,8 @@ module.exports.run = async (bot, message, args) => {
             .addField("Avatar URL", `${message.author.displayAvatarURL}`)
             .setFooter(`Thanks for using EquippedDroid`, "https://bot.hernikplays.tk/yeetcon.png")
     }
-    else if(args[0]){
+    
+    else if(!toBan) return  message.channel.send("Please mention a user or write his ID!");
         let embed = new Discord.RichEmbed()
             .setAuthor(`${message.author.username}`, `${message.author.displayAvatarURL}`)
             .setDescription("This is some of the info I could find:")
