@@ -13,6 +13,7 @@ module.exports.run = async (bot, message, args) => {
             .addField("Account created at", `${message.author.createdAt}`)
             .addField("Avatar URL", `${message.author.displayAvatarURL}`)
             .setFooter(`Thanks for using EquippedDroid`, "https://bot.hernikplays.tk/yeetcon.png")
+            message.channel.send({embed: embed});
     }
     
     else if(!ui) return  message.channel.send("Please mention a user or write his ID!");
@@ -27,9 +28,10 @@ module.exports.run = async (bot, message, args) => {
             .addField("Account created at", `${ui.createdAt}`)
             .addField("Avatar URL", `${ui.displayAvatarURL}`)
             .setFooter(`Thanks for using EquippedDroid`, "https://bot.hernikplays.tk/yeetcon.png")
+            message.channel.send({embed: embed});
     }
             
-         message.channel.send({embed: embed});
+         
     
 }
 
