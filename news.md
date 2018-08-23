@@ -2,7 +2,12 @@
 [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands)
 [![News Button](https://img.shields.io/badge/Page%3A-News-brightgreen.svg)](https://bot.hernikplays.tk/news) 
 # Bot News
-## Last updated 9th August
+## Last updated 23rd August
+
+23/08/2018
+-Gonna release a new version
+-Gonna stop developing this bot, and move onto a new one [Maybe this one](https://github.com/discordies/JustAPotato)
+
 
 09/08/2018
 - Back
