@@ -1,4 +1,4 @@
-['End](https://s8.postimg.cc/fngzde9hx/backgrounder_25.jpg)(./end)
+[!End](https://s8.postimg.cc/fngzde9hx/backgrounder_25.jpg)](./end)
 [![Home Button](https://img.shields.io/badge/Page%3A-Home-brightgreen.svg)](./)
 [![CommandsButton](https://img.shields.io/badge/Page%3A-Commands-green.svg)](./commands)
 [![News Button](https://img.shields.io/badge/Page%3A-News-green.svg)](https://bot.hernikplays.tk/news) 
